@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s linear;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main h2 {
+  color: #0b50b8;
+  text-align: center;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #bababa;
+  padding: 0.3rem 0.5rem;
+  margin: 0.4rem 0;
+  font-size: 1.4rem;
+  color: #0b50b8;
+}
+
+.main .todo .fa-check {
+  color: green;
+  margin: 0 0.3rem;
+  cursor: pointer;
+
+}
+.main .todo .fa-trash {
+  color: red;
+  cursor: pointer;
+
+}
+.main form {
+  margin-top: 1rem;
+}
+.main .todo.done {
+  background-color: #f6d18b;
+}
+.main .todo.done .todo-text {
+  text-decoration: line-through;
+  color: #617ab6;
+}
+
+.main .todo.fall {
+  transform: translateY(4rem) rotate(20deg);
+}
